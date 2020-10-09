@@ -1,0 +1,14 @@
+Mostre (sem usar equivalências) (p ^ q) -> (t v r) |- ~(p ^ q) v (t v r)
+
+1. (p ^ q) -> (t v r) premissa
+  2. ~(~(p ^ q) v (t v r)) hipótese
+    3. (p ^ q) hipótese
+    4. t v r E->(3,1)
+    5. ~(p ^ q) v (t v r) Iv(4)
+    6.( ~(p ^ q) v (t v r)) ^ ~(~(p ^ q) v (t v r)) I^(2,5)
+    7. _|_ ABS(6)
+  8. ~(p ^ q) RAA(7)
+  9. ~(p ^ q) v (t v r) Iv (8)
+  10. ( ~(p ^ q) v (t v r)) ^ ~(~(p ^ q) v (t v r)) I^(2,9)
+  11.  _|_ ABS(10)
+12. ~(p ^ q) v (t v r) RAA(12) 
